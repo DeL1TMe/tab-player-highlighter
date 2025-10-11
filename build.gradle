@@ -44,8 +44,7 @@ dependencies {
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
     modImplementation("com.terraformersmc:modmenu:${project.modmenu_version}")
     modImplementation "dev.isxander:yet-another-config-lib:${project.yacl_version}"
-    modImplementation "com.github.FySjutton:BetterTab:1.21-1.21.1-SNAPSHOT"
-    implementation 'com.google.code.gson:gson:2.13.1'
+    modImplementation "com.github.FySjutton:BetterTab:1.21.6-1.21.8-SNAPSHOT"
 
 }
 

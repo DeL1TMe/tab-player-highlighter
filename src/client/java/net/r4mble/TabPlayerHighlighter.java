@@ -1,7 +1,7 @@
 package net.r4mble;
 
 import net.fabricmc.api.ClientModInitializer;
-import net.r4mble.event.PlayerIvents;
+import net.r4mble.event.PlayerEvents;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,7 +16,7 @@ public class TabPlayerHighlighter implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         ModConfig.HANDLER.load();
-        PlayerIvents.registerEvents();
+        PlayerEvents.registerEvents();
         LOGGER.info("Mod is initialized!");
     }
 }

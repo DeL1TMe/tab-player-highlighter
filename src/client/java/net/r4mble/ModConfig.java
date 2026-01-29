@@ -22,7 +22,7 @@ public class ModConfig {
     @SerialEntry
     public boolean onlineMod = true;
     @SerialEntry
-    public String API_URL = "http://localhost:3000/get_roles";
+    public String API_URL = "https://tph-api.energyproject.dev/api/prefixes";
     @SerialEntry
     public HashMap<String, String> playersPrefixes = new HashMap<>();
 

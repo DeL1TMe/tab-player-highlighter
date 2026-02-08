@@ -29,13 +29,13 @@
     }
   ],
   "depends": {
-    "fabricloader": ">=0.16.14",
-    "minecraft": ">=1.21",
+    "fabricloader": ">=0.18.1",
+    "minecraft": ">=1.21.11",
     "java": ">=21",
     "fabric-api": "*",
-    "yet_another_config_lib_v3": ">=3.6.1"
+    "yet_another_config_lib_v3": ">=3.8.2"
   },
   "suggests": {
-    "better-tab": ">=1.0.0+1.20.5-1.21.x"
+    "better-tab": ">=2.1.5+1.21.11"
   }
 }

@@ -28,7 +28,7 @@ public class BetterTabMixin {
         }
         HashMap<String, PlayerListEntry> tabList = new HashMap<>();
         for (PlayerListEntry entry : originalList) {
-            tabList.put(entry.getProfile().getId().toString(), entry);
+            tabList.put(entry.getProfile().id().toString(), entry);
         }
         List<PlayerListEntry> modifiedList = new ArrayList<>();
         List<PlayerListEntry> priorityList = new ArrayList<>();
@@ -38,7 +38,7 @@ public class BetterTabMixin {
             }
         }
         for (PlayerListEntry entry : originalList) {
-            if (!TabPlayerHighlighter.players_prefixes.containsKey(entry.getProfile().getId().toString())) {
+            if (!TabPlayerHighlighter.players_prefixes.containsKey(entry.getProfile().id().toString())) {
                 modifiedList.add(entry);
             }
         }
@@ -51,12 +51,12 @@ public class BetterTabMixin {
     private static void onGetPlayerName(PlayerListEntry entry, CallbackInfoReturnable<Text> cir) {
         Text displayName = entry.getDisplayName() != null
                 ? entry.getDisplayName()
-                : Text.literal(entry.getProfile().getName());
+                : Text.literal(entry.getProfile().name());
 
         if (TabPlayerHighlighter.players_prefixes == null) {
             return;
         }
-        String uuid = entry.getProfile().getId().toString();
+        String uuid = entry.getProfile().id().toString();
 
         String prefix = TabPlayerHighlighter.players_prefixes.get(uuid);
         if (prefix != null && !prefix.isEmpty()) {
